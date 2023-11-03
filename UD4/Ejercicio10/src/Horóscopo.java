@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class Horóscopo {
     public static void main(String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
         
