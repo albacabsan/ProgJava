@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class Desayuno {
     public static void main(String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
         String comida;
@@ -55,7 +55,7 @@ public class App {
                 break;
         }
         precio_total = precio_comida+precio_bebida;
-        System.out.println("Total desayuno: " + precio_total + " euros");
+        System.out.printf("Total desayuno: %4.2f euros\n", precio_total);
         s.close();
     }
 }
