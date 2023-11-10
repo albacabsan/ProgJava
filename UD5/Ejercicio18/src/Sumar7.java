@@ -1,14 +1,12 @@
 import java.util.Scanner;
 
-public class App {
+public class Sumar7 {
     public static void main(String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
         System.out.println("Introduzca dos números distintos: ");
         int num1= s.nextInt();
         int num2= s.nextInt();
-        int menor=0;
-        int mayor=0;
-        int i;
+        int menor, mayor, i;
         s.close();
 
         if (num1>num2) {
@@ -21,7 +19,7 @@ public class App {
         
         if (num1==num2) {
             System.out.println("Los números introducidos no pueden ser iguales");
-        } else{
+        } else {
             for (i=menor; i<=mayor; i+=7) {
             System.out.print(i + " ");
         }
