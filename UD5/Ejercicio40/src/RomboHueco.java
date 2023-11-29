@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class RomboHueco {
     public static void main(String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
         System.out.print("Dime la altura del rombo: ");
@@ -13,12 +13,13 @@ public class App {
         if ((altura_ini < 3) || (altura_ini % 2 == 0)) {
             System.out.println("ERROR DE ALTURA");
             } else {
-            // parte de arriba /////////////////////////////////////
-            while (alt <= altura_ini / 2 + 1) {
+            // parte de arriba
+            while (alt <= altura_ini/2 + 1) {
             // inserta espacios delante
                 for (i = 1; i <= esp_fuera; i++) {
                     System.out.print(" ");
-                    System.out.print("*");
+                }
+                System.out.print("*");
                 for (i = 1; i < esp_dentro; i++) {
                     System.out.print(" ");
                 }
@@ -30,7 +31,7 @@ public class App {
                 esp_fuera--;
                 esp_dentro+=2;
             }
-            // parte de abajo /////////////////////////////////////
+            // parte de abajo
             esp_dentro = altura_ini - 3;
             esp_fuera = 1;
             alt = 0;
@@ -51,9 +52,8 @@ public class App {
             alt++;
             esp_fuera++;
             esp_dentro -= 2;
-            } // while parte de abajo ///////////////////////
-            } // else
-
+            }
+            }
         }
     }
-}
+
