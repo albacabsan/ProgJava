@@ -9,7 +9,7 @@ public class LetraU {
         s.close();
         for (i=1; i<=altura-1; i++) {
             System.out.print("*");
-            for (esp=1; esp<=altura; esp++) {
+            for (esp=1; esp<=altura-2; esp++) {
                 System.out.print(" ");
             }
             System.out.println("*");
