@@ -6,6 +6,7 @@ public class Fibonacci {
         System.out.print("Introduce un número: ");
         int n;
         n = s.nextInt();
+        s.close();
         int i;
         int fib1, fib2, fib3;
         fib1=0;
@@ -17,6 +18,5 @@ public class Fibonacci {
             fib1=fib2;
             fib2=fib3;
         }
-        s.close();
     }
 }
